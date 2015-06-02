@@ -7,11 +7,9 @@ Gem::Specification.new do |s|
   s.version     = App::VERSION
   s.authors     = ["Daniel Hanson"]
   s.email       = ["dan.hanson@americanfinancing.net"]
-  s.homepage    = "example.com"
   s.summary     = "This is the first component created"
-  s.description = "Functions much like a 'normal' rails application"
-  s.license     = "MIT"
 
+  s.test_files = Dir["spec/**/*"]
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile"]
 
   s.add_dependency "rails", "~> 4.2.1"
