@@ -9,6 +9,7 @@ PATH
   remote: .
   specs:
     app (0.0.1)
+      games
       haml-rails
       jquery-rails
       predictor
@@ -18,6 +19,9 @@ PATH
 PATH
   remote: ../
   specs:
+    games (0.0.1)
+      activerecord (~> 4.2.1)
+      teams
     predictor (0.0.1)
       trueskill
     teams (0.0.1)
@@ -174,6 +178,7 @@ DEPENDENCIES
   app!
   capybara
   database_cleaner
+  games!
   predictor!
   rspec-rails
   shoulda-matchers
