@@ -6,7 +6,7 @@ module App
 
     # GET /games
     def index
-      @games = Game.all
+      @games = ::Games::Game.all
     end
 
     # GET /games/1
@@ -15,7 +15,7 @@ module App
 
     # GET /games/new
     def new
-      @game = Game.new
+      @game = ::Games::Game.new
     end
 
     # GET /games/1/edit
@@ -24,7 +24,7 @@ module App
 
     # POST /games
     def create
-      @game = Game.new(game_params)
+      @game = ::Games::Game.new(game_params)
 
       if @game.save
         redirect_to @game, notice: 'Game was successfully created.'
@@ -51,7 +51,7 @@ module App
     private
       # Use callbacks to share common setup or constraints between actions.
       def set_game
-        @game = Game.find(params[:id])
+        @game = ::Games::Game.find(params[:id])
       end
 
       # Only allow a trusted parameter "white list" through.

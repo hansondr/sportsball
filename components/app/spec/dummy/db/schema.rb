@@ -11,9 +11,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150603184205) do
+ActiveRecord::Schema.define(version: 20150603200913) do
 
-  create_table "app_games", force: :cascade do |t|
+  create_table "games_games", force: :cascade do |t|
     t.datetime "date"
     t.string   "location"
     t.integer  "first_team_id"
