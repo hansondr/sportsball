@@ -15,13 +15,17 @@ PATH
       trueskill
     teams (0.0.1)
       activerecord (~> 4.2.1)
+    web_style (0.0.1)
+      haml-rails
+      jquery-rails
+      rails (~> 4.2.1)
     web_ui (0.0.1)
       games
       haml-rails
       jquery-rails
       predictor
       rails (~> 4.2.1)
-      teams
+      web_style
 
 GEM
   remote: https://rubygems.org/

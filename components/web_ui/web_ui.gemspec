@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
   s.add_dependency "jquery-rails"
 
   s.add_dependency "predictor"
-  s.add_dependency "teams"
   s.add_dependency "games"
+  s.add_dependency "web_style"
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "rspec-rails"
