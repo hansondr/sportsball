@@ -1,15 +1,4 @@
-module ObjectCreationMethods
-  def new_team(overrides = {})
-    defaults = {
-      name: "Some name #{counter}"
-    }
-    App::Team.new { |team| apply(team, defaults, overrides) }
-  end
-
-  def create_team(overrides = {})
-    new_team(overrides).tap(&:save!)
-  end
-
+module App::ObjectCreationMethods
   def new_game(overrides = {})
     defaults = {
       first_team: -> { new_team },
@@ -20,6 +9,7 @@ module ObjectCreationMethods
       location: 'Someplace',
       date: Date.today
     }
+
     App::Game.new { |game| apply(game, defaults, overrides) }
   end
 

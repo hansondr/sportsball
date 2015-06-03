@@ -13,12 +13,15 @@ PATH
       jquery-rails
       predictor
       rails (~> 4.2.1)
+      teams
 
 PATH
   remote: ../
   specs:
     predictor (0.0.1)
       trueskill
+    teams (0.0.1)
+      activerecord (~> 4.2.1)
 
 GEM
   remote: https://rubygems.org/
@@ -135,7 +138,7 @@ GEM
     rspec-mocks (3.2.1)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
-    rspec-rails (3.2.1)
+    rspec-rails (3.2.2)
       actionpack (>= 3.0, < 4.3)
       activesupport (>= 3.0, < 4.3)
       railties (>= 3.0, < 4.3)
@@ -149,7 +152,7 @@ GEM
     sexp_processor (4.6.0)
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
-    sprockets (3.1.0)
+    sprockets (3.2.0)
       rack (~> 1.0)
     sprockets-rails (2.3.1)
       actionpack (>= 3.0)
@@ -175,4 +178,5 @@ DEPENDENCIES
   rspec-rails
   shoulda-matchers
   sqlite3
+  teams!
   trueskill!
