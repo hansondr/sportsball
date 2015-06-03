@@ -11,7 +11,13 @@ PATH
     app (0.0.1)
       haml-rails
       jquery-rails
+      predictor
       rails (~> 4.2.1)
+
+PATH
+  remote: ../
+  specs:
+    predictor (0.0.1)
       trueskill
 
 GEM
@@ -165,6 +171,7 @@ DEPENDENCIES
   app!
   capybara
   database_cleaner
+  predictor!
   rspec-rails
   shoulda-matchers
   sqlite3

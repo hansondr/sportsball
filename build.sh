@@ -2,8 +2,6 @@
 
 result=0
 
-cd "$( dirname "${BASH_SOURCE[0]}" )"
-
 for test_script in $(find . -name test.sh); do
   pushd `dirname $test_script` > /dev/null
   ./test.sh
