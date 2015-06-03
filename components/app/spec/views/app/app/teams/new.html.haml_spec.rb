@@ -1,6 +1,6 @@
 RSpec.describe 'app/teams/new', type: :view do
   before :each do
-    assign :team, App::Team.new(name: 'MyString')
+    assign :team, Teams::Team.new(name: 'MyString')
   end
 
   it 'renders new team form' do

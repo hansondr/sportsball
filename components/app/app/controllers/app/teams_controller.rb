@@ -6,7 +6,7 @@ module App
 
     # GET /teams
     def index
-      @teams = Team.all
+      @teams = Teams::Team.all
     end
 
     # GET /teams/1
@@ -15,7 +15,7 @@ module App
 
     # GET /teams/new
     def new
-      @team = Team.new
+      @team = Teams::Team.new
     end
 
     # GET /teams/1/edit
@@ -24,7 +24,7 @@ module App
 
     # POST /teams
     def create
-      @team = Team.new(team_params)
+      @team = Teams::Team.new(team_params)
 
       if @team.save
         redirect_to @team, notice: 'Team was successfully created.'
@@ -51,7 +51,7 @@ module App
     private
       # Use callbacks to share common setup or constraints between actions.
       def set_team
-        @team = Team.find(params[:id])
+        @team = Teams::Team.find(params[:id])
       end
 
       # Only allow a trusted parameter "white list" through.

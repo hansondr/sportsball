@@ -13,8 +13,11 @@ PATH
       jquery-rails
       predictor
       rails (~> 4.2.1)
+      teams
     predictor (0.0.1)
       trueskill
+    teams (0.0.1)
+      activerecord (~> 4.2.1)
 
 GEM
   remote: https://rubygems.org/
