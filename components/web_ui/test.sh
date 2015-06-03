@@ -2,11 +2,9 @@
 
 exit_code=0
 
-echo "*** Running application container specs"
+echo "*** Running web_ui engine specs"
 bundle install | grep Installing
-bundle exec rake db:drop
-bundle exec rake db:create
-bundle exec rake db:migrate
+bundle exec rake db:create db:migrate
 RAILS_ENV=test bundle exec rake db:create
 RAILS_ENV=test bundle exec rake db:migrate
 bundle exec rspec spec
