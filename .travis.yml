@@ -1,6 +1,6 @@
 gemfile:
   - Gemfile
-  - components/app/Gemfile
+  - components/web_ui/Gemfile
 script:
   - ./test.sh
 before_install:
